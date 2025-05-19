@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickNotes</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span class="material-icons" style="font-size: 1.2em; vertical-align: middle; margin-right: 8px;">description</span>QuickNotes</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="note-editor-section">
+            <h2><span class="material-icons">edit_note</span>Create / Edit Note</h2>
+            <form id="note-form">
+                <input type="hidden" id="note-id" value="">
+                <div class="form-group">
+                    <label for="note-title">Title (Optional)</label>
+                    <input type="text" id="note-title" placeholder="Enter note title...">
+                </div>
+                <div class="form-group">
+                    <label for="note-content">Content</label>
+                    <textarea id="note-content" rows="6" placeholder="Write your note here..." required></textarea>
+                </div>
+                <button type="submit" id="save-note-btn" class="btn btn-primary">
+                    <span class="material-icons">save</span>Save Note
+                </button>
+                <button type="button" id="cancel-edit-btn" class="btn btn-secondary" style="display: none;">
+                    <span class="material-icons">cancel</span>Cancel Edit
+                </button>
+            </form>
+        </section>
+
+        <section id="notes-list-section">
+            <h2><span class="material-icons">list_alt</span>My Notes</h2>
+            <div id="notes-filter-search">
+                 <input type="text" id="search-bar" placeholder="Search notes...">
+            </div>
+            <div id="notes-list-container">
+                <!-- Notes will be dynamically inserted here -->
+                <p id="no-notes-message" style="display: none;">No notes yet. Create one!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 QuickNotes. A simple notes app.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "quicknotes-app",
+  "version": "1.0.0",
+  "description": "A simple notes application built using HTML, CSS, and JavaScript.",
+  "main": "script.js",
+  "scripts": {
+    "start": "echo \"Open index.html in your browser to run the application.\"",
+    "lint": "echo \"No linter configured\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "notes",
+    "javascript",
+    "html",
+    "css",
+    "localstorage"
+  ],
+  "author": "AI Generated",
+  "license": "ISC"
+}
